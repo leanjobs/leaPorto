@@ -160,7 +160,7 @@ main {
 
 .home-image img {
     width: 400px;
-    min-width: 250px;
+    min-width: 150px;
     margin-left: auto;
 }
 
@@ -184,7 +184,7 @@ main {
 
 .about-me-image img {
     width: 400px;
-    min-width: 250px;
+    min-width: 150px;
     margin-right: auto;
 }
 
@@ -213,6 +213,17 @@ main {
     cursor: pointer;
     transition: all 0.15s ease-in;
 }
+
+.about-me-description div {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-description div ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 
 
 
@@ -355,17 +366,34 @@ footer {
         column-gap: 0.5rem;
     }
 
+
     .home {
         flex-direction: column;
         gap: 2rem;
     }
 
-    .home-description .title {
-        font-size: 3rem;
+    .home-description .title-home {
+        font-size: 2.5rem;
+    }
+
+    .home-description h2 {
+        font-size: 1.5rem;
     }
 
     .home-description p {
         font-size: 1rem;
+    }
+
+    .home-image img {
+        width: 300px;
+    }
+
+    .about-me-image img {
+        width: 300px;
+    }
+
+    .about-me-description div {
+        flex-direction: column;
     }
 
     .home-image {
@@ -378,9 +406,24 @@ footer {
 
     }
 
+    .about-me-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me-description h1 {
+        font-size: 2rem;
+    }
+
+    .about-me-description p {
+        font-size: 1rem;
+    }
 
     .mySkill ul li img {
         width: 40px;
+    }
+
+    .mySkill ul li {
+        margin: 10px;
     }
 
     .myProject {
