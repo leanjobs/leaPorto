@@ -1,0 +1,407 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto mono', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #E4F0FF;
+}
+
+
+
+.navbar-container {
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(228, 240, 255, 0.257);
+    backdrop-filter: blur(15px);
+
+    z-index: 9999;
+}
+
+.navbar-container .logo img {
+    width: 150px;
+}
+
+.navbar-container .nav-list ul {
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-container .nav-list li:hover a {
+    background-color: #4d93e9;
+    color: white;
+}
+
+main {
+    flex: 1;
+
+    width: 100%;
+    /* max-width: 1200px; */
+    /* margin-inline: auto;
+    padding: 2rem 4rem; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.home {
+    flex: 1;
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    background-color: #E4F0FF;
+}
+
+
+
+.home-description {
+    flex: 1 1;
+}
+
+.title-home {
+    margin-block: 0.5rem;
+    font-size: 3.5rem;
+}
+
+.title-job {
+    /* margin-block: 1rem;
+    font-size: 3.5rem; */
+    margin-block: 1rem;
+    color: #4d93e9;
+}
+
+.home-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.home-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color: #4d93e9;
+
+    font-family: 'Roboto mono', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.home-description button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.home-description button:hover {
+    border: 3px solid #4d93e9;
+    background-color: transparent;
+
+    color: #4d93e9;
+}
+
+.home-description button a:hover {
+    color: #4d93e9;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+}
+
+.home-image img {
+    width: 400px;
+    min-width: 250px;
+    margin-left: auto;
+}
+
+
+.about-me {
+    flex: 1;
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    background-color: white;
+
+}
+
+/* .about-me-item {
+    flex: 1;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+} */
+
+.about-me-image {
+    flex: 1;
+    display: flex;
+}
+
+.about-me-image img {
+    width: 400px;
+    min-width: 250px;
+    margin-right: auto;
+}
+
+.about-me-description {
+    flex: 1 1;
+}
+
+.about-me-description h2 {
+    color: #4d93e9;
+}
+
+.about-me-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color: #4d93e9;
+
+    font-family: 'Roboto mono', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+
+
+.about-me-description button:hover {
+    border: 3px solid #4d93e9;
+    background-color: transparent;
+
+    color: #4d93e9;
+}
+
+.skills {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+}
+
+.skills-item {
+    flex: 1;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex-direction: column;
+}
+
+.title {
+    color: #4d93e9;
+    font-size: xx-large;
+}
+
+.mySkill {
+    align-items: center;
+}
+
+.mySkill ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+.mySkill ul li img {
+    width: 80px;
+}
+
+.mySkill ul li {
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.skills-item {
+    padding: 0;
+}
+
+/* .skills {
+    padding: 0;
+} */
+
+.project {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    background-color: white;
+}
+
+.project-item {
+    flex: 1;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    padding: 1rem 1rem;
+    flex-direction: column;
+}
+
+.myProject {
+    /* width: 1200px; */
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.myProject div {
+    width: 48%;
+    height: 10%;
+    margin: 1%;
+    padding: 30px;
+    border: solid 2px #4d93e9;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.myProject div:hover {
+    box-shadow: 0 4px 8px 0 rgba(120, 117, 117, 0.559);
+    transition: all 0.15s ease-in;
+}
+
+.myProject div h1 {
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.projectImage {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 2.5%;
+    object-fit: cover;
+    object-position: center;
+}
+
+footer {
+    background-color: white;
+    margin-top: 50px;
+    padding: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 786px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .home-description .title {
+        font-size: 3rem;
+    }
+
+    .home-description p {
+        font-size: 1rem;
+    }
+
+    .home-image {
+        order: -1;
+    }
+
+    .about-me {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+
+    .mySkill ul li img {
+        width: 40px;
+    }
+
+    .myProject {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .myProject div {
+        width: 100%;
+
+    }
+}
