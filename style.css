@@ -23,8 +23,6 @@ body {
     width: 100%;
     padding-block: 1rem;
     margin-inline: auto;
-    /* padding-left: 1.5rem;
-    padding-right: 1.5rem; */
     position: sticky;
     top: 0;
     display: flex;
@@ -32,7 +30,7 @@ body {
     align-items: center;
     background-color: rgba(228, 240, 255, 0.257);
     backdrop-filter: blur(15px);
-    padding: 2rem;
+    padding: 1rem;
     /* background-color: aqua; */
 
     z-index: 9999;
@@ -362,10 +360,13 @@ footer {
     }
 
     header.navbar-container .nav-list ul {
-        flex-wrap: wrap;
-        column-gap: 0.5rem;
+        flex-wrap: nowrap;
+        column-gap: 0;
     }
 
+    .navbar-container .nav-list ul li a {
+        font-size: 11px;
+    }
 
     .home {
         flex-direction: column;
