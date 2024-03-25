@@ -365,8 +365,13 @@ footer {
     }
 
     .navbar-container .nav-list ul li a {
-        font-size: 11px;
+        font-size: 13px;
+        padding: 0.5rem 1rem;
     }
+
+    /* .navbar-container .nav-list ul li {
+       
+    } */
 
     .home {
         flex-direction: column;
