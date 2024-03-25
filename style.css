@@ -31,7 +31,6 @@ body {
     background-color: rgba(228, 240, 255, 0.257);
     backdrop-filter: blur(15px);
     padding: 1rem;
-    /* background-color: aqua; */
 
     z-index: 9999;
 }
@@ -88,9 +87,7 @@ main {
     max-width: 1200px;
     align-items: center;
     margin-inline: auto;
-    /* padding: 2rem 4rem; */
     background-color: #E4F0FF;
-    /* padding: 2rem; */
 }
 
 
@@ -169,7 +166,6 @@ main {
     max-width: 1200px;
     align-items: center;
     margin-inline: auto;
-    /* padding: 2rem; */
     background-color: white;
 
 }
@@ -222,6 +218,10 @@ main {
     padding-left: 0;
 }
 
+
+.about-me-description div .bio-2 {
+    padding-left: 1rem;
+}
 
 
 
@@ -302,8 +302,6 @@ main {
 
 
 .myProject {
-    /* width: 1200px; */
-    /* margin: 10px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -345,7 +343,6 @@ footer {
     color: black;
     text-align: center;
     font-weight: bold;
-    /* padding: 2rem 4rem; */
 
 }
 
@@ -369,9 +366,18 @@ footer {
         padding: 0.5rem 1rem;
     }
 
-    /* .navbar-container .nav-list ul li {
-       
-    } */
+    .about-me-description div .bio-2 {
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .about-me-description div ul li {
+        margin-bottom: 5px;
+    }
+
+    .about-me-description div .bio-1 {
+        margin-bottom: 0;
+    }
 
     .home {
         flex-direction: column;
@@ -410,6 +416,10 @@ footer {
         flex-direction: column;
         gap: 2rem;
 
+    }
+
+    .about-me-description div ul li {
+        padding-left: 0;
     }
 
     .about-me-description h2 {
